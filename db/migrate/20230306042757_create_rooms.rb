@@ -1,4 +1,5 @@
 class CreateRooms < ActiveRecord::Migration[7.0]
+  # rails g model Room questio:text answer:text user:references
   def change
     create_table :rooms do |t|
       t.text :question

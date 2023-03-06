@@ -1,0 +1,11 @@
+<h1>Rooms#new</h1>
+<p>Find me in app/views/rooms/new.html.erb</p>
+<%= form_with model: @room do |f| %>
+  <%= f.label :question %>
+  <%= f.text_area :question %>
+
+  <%= f.label :answer %>
+  <%= f.text_area :answer %>
+
+  <%= f.submit %>
+<% end %>
